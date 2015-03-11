@@ -5,6 +5,8 @@ public class Imp extends Enemy {
 	@Override
 	public void checkPlayerSpotted(){
 		
+		if(isdead()) System.out.println("hi");
+		
 	}
 	
 	@Override
