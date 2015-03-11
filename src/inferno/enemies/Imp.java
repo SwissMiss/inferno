@@ -1,6 +1,12 @@
 package inferno.enemies;
 
 public class Imp extends Enemy {
+	
+	@Override
+	public void checkPlayerSpotted(){
+		
+	}
+	
 	@Override
 	public void step() {  //algorithm that selects movement and attacks
 		if(isPlayerSpotted()){
@@ -18,6 +24,7 @@ public class Imp extends Enemy {
 			setPosY(y+getPosY());
 			
 			checkPlayerSpotted();
+			
 		}
 		
 		
