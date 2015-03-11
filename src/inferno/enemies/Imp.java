@@ -8,6 +8,7 @@ public class Imp extends Enemy {
 			
 			
 		}else{
+			//random movement, implement wall collision checking later
 			int x=(int) (Math.random()*3);
 			int y=(int) (Math.random()*3);
 			if(Math.random()<.5)x*=-1;
@@ -15,6 +16,8 @@ public class Imp extends Enemy {
 			
 			setPosX(x+getPosX());
 			setPosY(y+getPosY());
+			
+			checkPlayerSpotted();
 		}
 		
 		
