@@ -18,5 +18,11 @@ public class Enemy extends Character {
 	public void setPlayerSpotted(boolean playerSpotted) {
 		PlayerSpotted = playerSpotted;
 	}
+	
+	public void checkPlayerSpotted(){ //varies based on enemy possibly add a basic one that ~80-90% of enemies use, either that or ignore 100%
+		
+	}
+	
+	
 
 }

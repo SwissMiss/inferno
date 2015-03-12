@@ -5,7 +5,7 @@ public class Imp extends Enemy {
 	@Override
 	public void checkPlayerSpotted(){
 		
-		if(isdead()) ;
+		
 		
 	}
 	
@@ -17,14 +17,13 @@ public class Imp extends Enemy {
 			
 		}else{
 			//random movement, implement wall collision checking later
-			int x=(int) (Math.random()*3);
-			int y=(int) (Math.random()*3);
+			int x=(int) (Math.random()*2);
+			int y=(int) (Math.random()*2);
 			if(Math.random()<.5)x*=-1;
 			if(Math.random()<.5)y*=-1;
 			
 			setPosX(x+getPosX());
 			setPosY(y+getPosY());
-			
 			checkPlayerSpotted();
 			
 		}
