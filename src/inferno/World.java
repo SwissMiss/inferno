@@ -5,7 +5,7 @@ import inferno.enemies.Enemy;
 //so this is basically the class everything is stored in, so there'll be an array of monsters and such and blah 
 public class World {
 	private Enemy[] monsters;
-	
+	private Player player;
 	public World(){
 		
 	}
@@ -35,5 +35,13 @@ public class World {
 		}
 		
 		
+	}
+
+	public Player getPlayer() {
+		return player;
+	}
+
+	public void setPlayer(Player player) {
+		this.player = player;
 	}
 }

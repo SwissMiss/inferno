@@ -4,7 +4,7 @@ public class Imp extends Enemy {
 	
 	@Override
 	public void checkPlayerSpotted(){
-		
+		int disx=Math.abs(getPosX());
 		
 		
 	}

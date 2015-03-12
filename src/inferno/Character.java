@@ -9,6 +9,7 @@ public class Character {
 	private boolean dead;
 	private int posX;
 	private int posY;
+	private World w;
 	
 
 	
@@ -32,8 +33,8 @@ public class Character {
 	}
 
 
-	public Character(){
-		
+	public Character(World w){
+		this.setWorld(w);
 	}
 
 
@@ -82,5 +83,15 @@ public class Character {
 
 	public void setdead(boolean dead) {
 		this.dead = dead;
+	}
+
+
+	public World getWorld() {
+		return w;
+	}
+
+
+	public void setWorld(World w) {
+		this.w = w;
 	}
 }

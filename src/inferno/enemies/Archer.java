@@ -8,8 +8,8 @@ public class Archer extends Enemy {
 			
 			
 		}else{
-			int x=(int) (Math.random()*3);
-			int y=(int) (Math.random()*3);
+			int x=(int) (Math.random()*2);
+			int y=(int) (Math.random()*2);
 			if(Math.random()<.5)x*=-1;
 			if(Math.random()<.5)y*=-1;
 			
