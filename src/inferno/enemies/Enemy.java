@@ -9,6 +9,7 @@ public class Enemy extends Character {
 	}
 
 	public Enemy() {
+		
 	}
 
 	public boolean isPlayerSpotted() {

@@ -36,7 +36,10 @@ public class World {
 		
 		
 	}
-
+	public boolean WallAt(int x,int y){
+		
+		return false;
+	}
 	public Player getPlayer() {
 		return player;
 	}

@@ -4,8 +4,14 @@ public class Imp extends Enemy {
 	
 	@Override
 	public void checkPlayerSpotted(){
-		int disx=Math.abs(getPosX());
-		
+		int playerX=getWorld().getPlayer().getPosX();
+		int playerY=getWorld().getPlayer().getPosY();
+		int disx=Math.abs(playerX-getPosX());
+		int disy=Math.abs(-getPosY());
+		int bestChange;
+		if(disx<disy){
+			if(playerY>getPosY());
+		}
 		
 	}
 	

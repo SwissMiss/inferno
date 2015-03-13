@@ -11,7 +11,9 @@ public class Character {
 	private int posY;
 	private World w;
 	
-
+	public Character(){
+		
+	}
 	
 	public int getPosX() {
 		return posX;
