@@ -19,7 +19,7 @@ public class Skills {
 	private String description;
 	
 	
-	public void effect(Stats user,Stats target){
+	public void effect(Stats user,Stats target){  //just change to character since you can do get stats within or whatever is a future consideration
 	}
 	
 	public String getDescrip(){return description;}

@@ -31,6 +31,16 @@ public class World {
 	//this increments the world and makes all the monsters take a turn, environmental hazards activate and whatever else is dependent upon turns
 	public void step(){
 		for(int i=0;i<monsters.length;i++){
+			if(monsters[i].isdead()){
+				
+				Enemy[] m=new Enemy[monsters.length-1];
+				for(int j=0;j<monsters.length;j++){
+					if(j<i)m[j]=monsters[j];
+					else if(j>i) m[j-1]=monsters[j];
+				}
+				monsters=m;
+				i--;
+			}
 			monsters[i].step();
 		}
 		
