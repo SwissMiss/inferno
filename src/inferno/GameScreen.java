@@ -158,9 +158,7 @@ public class GameScreen extends Canvas implements Runnable, KeyListener {
 			if(keysDown[i]==keyE.getKeyCode())	{add=false;break;}
 			newDown[i]=keysDown[i];
 		}
-
 		if(add){
-
 			newDown[keysDown.length]=keyE.getKeyCode();
 			keysDown=newDown;
 		}
