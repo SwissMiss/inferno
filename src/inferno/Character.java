@@ -77,21 +77,17 @@ public class Character {
 		}
 	}
 	
-
 	public boolean isdead() {
 		return dead;
 	}
-
 
 	public void setdead(boolean dead) {
 		this.dead = dead;
 	}
 
-
 	public World getWorld() {
 		return w;
 	}
-
 
 	public void setWorld(World w) {
 		this.w = w;

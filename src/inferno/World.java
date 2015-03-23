@@ -6,6 +6,7 @@ import inferno.enemies.Enemy;
 public class World {
 	private Enemy[] monsters;
 	private Player player;
+	
 	public World(){
 		
 	}
